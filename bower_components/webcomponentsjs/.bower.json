@@ -31,7 +31,7 @@
     "tag": "v1.0.0-rc.6",
     "commit": "3b3bd26f285fd337fce2457f2c8eb1eff339d7b5"
   },
-  "_source": "https://github.com/webcomponents/webcomponentsjs.git",
-  "_target": "^1.0.0-rc.5",
-  "_originalSource": "webcomponents/webcomponentsjs"
+  "_source": "https://github.com/Polymer/webcomponentsjs.git",
+  "_target": "^v1.0.0-rc.5",
+  "_originalSource": "webcomponentsjs"
 }

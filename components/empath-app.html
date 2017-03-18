@@ -1,4 +1,6 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/app-route/app-route.html">
+<link rel="import" href="../bower_components/app-route/app-location.html">
 <link rel="import" href="empath-styles.html">
 <link rel="import" href="empath-nav.html">
 
@@ -14,7 +16,18 @@
 
     </style>
 
+		<app-location route="{{route}}"></app-location>
+		<app-route route="{{route}}" pattern="/:page" data="{{data}}"></app-route>
+
 		<empath-nav></empath-nav>
+
+		<iron-pages selected="{{data.page}}" attr-for-selected="page">
+		  <section page=""></section>
+		  <section page="portfolio"></section>
+		  <section page="about"></section>
+		  <section page="contact"></section>
+		</iron-pages>
+
 
 		<div id="content">
 			<h1>

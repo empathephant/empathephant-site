@@ -3,7 +3,9 @@
   "description": "Shanti&#39;s website (parent component)",
   "main": "empath-app.html",
   "dependencies": {
-    "polymer": "Polymer/polymer#^2.0.0-rc.2"
+    "polymer": "Polymer/polymer#^2.0.0-rc.2",
+    "iron-pages": "PolymerElements/iron-pages#^1.0.8",
+    "app-route": "PolymerElements/app-route#^0.9.3"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#2.0-preview",
@@ -12,6 +14,10 @@
     "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0-rc.5"
   },
   "resolutions": {
-    "polymer": "^2.0.0-rc.2"
+    "polymer": "^2.0.0-rc.2",
+    "iron-location": "2.0-preview",
+    "webcomponentsjs": "^v1.0.0-rc.5",
+    "iron-resizable-behavior": "2.0-preview",
+    "iron-selector": "2.0-preview"
   }
 }
