@@ -1,13 +1,15 @@
 /* Handle basic element styling */
+
 body {
-  font:"Helvetica Neue", "Helvetica", sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
   background-color: #191923;
   text-align: center;
   color: white;
+  margin: 0;
 }
 
 h1 {
-
+  font-weight: 100;
 }
 
 h2 {
@@ -18,9 +20,7 @@ p {
 
 }
 
-ul {
-  list-style-type: none;
-}
+
 
 /*top navigation bar*/
 #header {
@@ -28,7 +28,7 @@ ul {
 }
 #nav-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -38,8 +38,12 @@ ul {
   width: 100%;
 }
 
+#nav-container ul {
+  list-style-type: none;
+}
+
 .nav-item {
-  justify-content: space-around;
+
 }
 
 .nav-item a {
@@ -53,6 +57,8 @@ ul {
 .nav-item a:hover {
     border-bottom: 1px solid #22CC99;
 }
+
+
 
 /*  On large screen or window,increase the font size for better readability */
 /*@media (min-width: 70em) {
