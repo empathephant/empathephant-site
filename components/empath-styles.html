@@ -1,0 +1,46 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="empath-styles">
+
+  <template>
+
+    <style>
+
+			:host {
+			  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+			  color: white;
+			}
+
+			h1 {
+			  font-weight: 100;
+			}
+
+			h2 {
+
+			}
+
+			p {
+
+			}
+
+			a {
+				color: #22CC99;
+				text-decoration: none;
+			}
+
+			a:visited {
+				color: lightblue;
+			}
+
+    </style>
+
+  </template>
+
+  <script>
+    class EmpathStyles extends Polymer.Element {
+      static get is() { return 'empath-styles'; }
+    }
+
+    window.customElements.define(EmpathStyles.is, EmpathStyles);
+  </script>
+</dom-module>

@@ -1,0 +1,78 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="empath-styles.html">
+
+<dom-module id="empath-nav">
+
+  <template>
+
+    <style include="empath-styles">
+
+      :host {
+        display: block;
+      }
+
+			header {
+				height: 30px;
+			}
+
+			#nav-container {
+				background-color: black;
+			  display: flex;
+			  justify-content: center;
+			  list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			  overflow: hidden;
+			  position: fixed;
+			  top: 0;
+			  width: 100%;
+				list-style-type: none;
+			}
+
+			.nav-item {
+
+			}
+
+			.nav-item a {
+			  display: block;
+			  padding: 14px 16px;
+			  color: white;
+			  text-align: center;
+			  text-decoration: none;
+			}
+
+			.nav-item a:hover {
+			    border-bottom: 1px solid #22CC99;
+			}
+
+    </style>
+
+		<header>
+			<!-- top menu bar -->
+			<ul id="nav-container">
+				<li class="nav-item"><a href="/">Home</a></li>
+				<li class="nav-item"><a href="/resume.pdf">Resumé</a></li>
+				<li class="nav-item"><a href="/linguistics.html">Portfolio</a></li>
+				<li class="nav-item"><a href="/about.html">About</a></li>
+				<li class="nav-item"><a href="/contact.html">Contact</a></li>
+			</ul>
+		</header>
+
+  </template>
+
+  <script>
+    class EmpathNav extends Polymer.Element {
+      static get is() { return 'empath-nav'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'empath-nav'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(EmpathNav.is, EmpathNav);
+  </script>
+</dom-module>
