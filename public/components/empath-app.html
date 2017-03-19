@@ -1,5 +1,6 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/app-route/app-route.html">
+<link rel="import" href="../bower_components/iron-pages/iron-pages.html">
 <link rel="import" href="../bower_components/app-route/app-location.html">
 <link rel="import" href="empath-styles.html">
 <link rel="import" href="empath-nav.html">
@@ -14,6 +15,15 @@
         display: block;
       }
 
+			#hey {
+				text-align: center;
+			}
+
+			#profile-pic {
+				display: block;
+				margin: auto;
+			}
+
     </style>
 
 		<app-location route="{{route}}"></app-location>
@@ -22,33 +32,33 @@
 		<empath-nav></empath-nav>
 
 		<iron-pages selected="{{data.page}}" attr-for-selected="page">
-		  <section page=""></section>
-		  <section page="portfolio"></section>
-		  <section page="about"></section>
-		  <section page="contact"></section>
+		  <section page="" class="text-page">
+				<div id="content">
+					<h1 id="hey">Hey there!</h1>
+					<img id="profile-pic" src="/images/profile-pic.jpeg">
+					<h2>I'm Shanti.</h2>
+					<p>I like <a href="/linguistics.html" title="Linguistics">linguistics</a>, computer science, design, and generally being ridiculous.</p>
+					<p>If you're creepy enough to want to stalk me, here's some of the places you can find me around the web:</p>
+					<ul>
+						<li><a title="Shanti de Ruyter on Facebook" href="https://www.facebook.com/shantithewriter">facebook</a></li>
+						<li><a title="@shantithewriter's Tweets" href="https://twitter.com/shantithewriter">twitter</a></li>
+						<li><a title="@shantithewriter on Instagram" href="https://www.instagram.com/shantithewriter/?hl=en">instagram</a></li>
+						<li><a title="Shanti de Ruyter on Pinterest" href="www.pinterest.com/theempathephant">pinterest</a></li>
+					</ul>
+				</div>
+			</section>
+		  <section page="portfolio">
+				<h1>Portfolio</h1>
+			</section>
+		  <section page="about">
+				<h1>About</h1>
+			</section>
+		  <section page="contact">
+				<h1>Contact</h1>
+			</section>
 		</iron-pages>
 
 
-		<div id="content">
-			<h1>
-				Hey there!
-			</h1>
-			<img src="/images/profile-pic.jpeg">
-			<h2>
-				I'm Shanti.
-			</h2>
-			<p>
-				I like <a href="/linguistics.html" title="Linguistics">linguistics</a>, computer science, design, and generally being ridiculous.
-			</p>
-			<p>
-				If you're creepy enough to want to stalk me, here's some of the places you can find me around the web:</p>
-			<ul>
-				<li><a title="Shanti de Ruyter on Facebook" href="https://www.facebook.com/shantithewriter">facebook</a></li>
-				<li><a title="@shantithewriter's Tweets" href="https://twitter.com/shantithewriter">twitter</a></li>
-				<li><a title="@shantithewriter on Instagram" href="https://www.instagram.com/shantithewriter/?hl=en">instagram</a></li>
-				<li><a title="Shanti de Ruyter on Pinterest" href="www.pinterest.com/theempathephant">pinterest</a></li>
-			</ul>
-		</div>
 
   </template>
 
